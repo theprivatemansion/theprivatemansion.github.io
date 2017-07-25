@@ -41,5 +41,5 @@
     "start": "node ./root.js",
     "build": "grunt heroku",
     "postinstall": "npm run build"
-  },
+  }
 }
