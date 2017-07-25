@@ -100,4 +100,4 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-copy'
 
   # tasks
-  grunt.registerTask 'default', ['uglify', 'sass', 'slim', 'connect', 'copy', 'watch']
+  grunt.registerTask 'default', ['uglify', 'sass', 'slim', 'copy', 'connect', 'watch']
