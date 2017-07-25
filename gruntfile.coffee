@@ -101,3 +101,4 @@ module.exports = (grunt) ->
 
   # tasks
   grunt.registerTask 'default', ['uglify', 'sass', 'slim', 'connect', 'copy', 'watch']
+  grunt.registerTask 'heroku', ['uglify', 'sass', 'slim', 'copy']
