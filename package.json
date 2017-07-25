@@ -3,9 +3,6 @@
   "description": "PROJECT_DESCRIPTION",
   "author": "YOUR_NAME <YOUR@EMAIL.COM>",
   "version": "0.1.0",
-  "scripts": {
-    "postinstall": "grunt heroku"
-  },
   "devDependencies": {
     "bootstrap": "^3.3.6",
     "bootstrap-sass": "^3.3.6",
