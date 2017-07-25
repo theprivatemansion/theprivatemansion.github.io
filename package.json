@@ -3,11 +3,6 @@
   "description": "PROJECT_DESCRIPTION",
   "author": "YOUR_NAME <YOUR@EMAIL.COM>",
   "version": "0.1.0",
-   "scripts": {
-    "start": "node ./root.js",
-    "build": "grunt heroku",
-    "postinstall": "npm run build"
-  },
   "devDependencies": {
     "bootstrap": "^3.3.6",
     "bootstrap-sass": "^3.3.6",
@@ -41,5 +36,10 @@
     "grunt-slim": "^0.1.0",
     "handlebars": "^4.0.6",
     "jquery": "^2.1.0"
-  }
+  },
+   "scripts": {
+    "start": "node ./root.js",
+    "build": "grunt heroku",
+    "postinstall": "npm run build"
+  },
 }
