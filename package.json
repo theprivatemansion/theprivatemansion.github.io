@@ -4,7 +4,7 @@
   "author": "YOUR_NAME <YOUR@EMAIL.COM>",
   "version": "0.1.0",
   "scripts": {
-    "postinstall": "npm install"
+    "postinstall": "grunt heroku"
   },
   "devDependencies": {
     "bootstrap": "^3.3.6",
