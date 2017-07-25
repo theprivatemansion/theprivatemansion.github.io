@@ -6,7 +6,7 @@
    "scripts": {
     "start": "node ./root.js",
     "build": "grunt heroku",
-    "postinstall": "npm install && npm run build"
+    "postinstall": "npm run build"
   },
   "devDependencies": {
     "bootstrap": "^3.3.6",
