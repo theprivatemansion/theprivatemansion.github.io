@@ -8,7 +8,7 @@ head
 body
 
   #home-page
-    div style="background-image: url('images/backgrounds/relyable-home-banner.jpg'); background-attachment: fixed"
+    div style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/backgrounds/relyable-home-banner.jpg'); background-attachment: fixed; background-size: cover;"
       nav.navbar.navbar-relyable.mb0
         .container: .row: .col-xs-12
           .container-fluid
@@ -22,62 +22,67 @@ body
               img src="images/logo/relyable-logo.png"
           #bs-example-navbar-collapse-1.collapse.navbar-collapse
             ul.nav.navbar-nav.pull-right
-              li.active: a.uppercase.text-700 href="#" Home
-              li: a.uppercase.text-700 href="#" Services
-              li: a.uppercase.text-700 href="#" Company
-              li: a.uppercase.text-700 href="#" Contact Us
+              li.active: a.uppercase.text-700 href="#home" Home
+              li: a.uppercase.text-700 href="#company" Company
+              li: a.uppercase.text-700 href="#services" Services
+              li: a.uppercase.text-700 href="#contact" Contact Us
               
 
-      .main-banner.pt64.pb64
+      #home.main-banner.pt64.pb64
         .container.pt64.pb64
           .row
             .col-xs-12
               .text-white.text-center
-                .font-48.text-700
-                  | Construction Services & Products
-                .font-21.text-300.pt16
-                  | Relyable Building Technologies, Inc. is commited to providing high service quality.
+                .font-64
+                  | Specialty Construction
+                  br
+                  | Services & Products
           .row 
             .col-xs-12.col-sm-8.col-md-6.col-centered.pt64
               .row
                 .col-xs-6.col-sm-6.pr8
-                  .btn.btn-white-clear.btn-block.btn-lg.uppercase.font-14.text-700 Services
+                  .btn.btn-white-clear.btn-block.btn-lg.uppercase.font-14.text-700 Company
                 .col-xs-6.col-sm-6.pl8
-                  .btn.btn-white-clear.btn-block.btn-lg.uppercase.font-14.text-700 Products
+                  .btn.btn-white-clear.btn-block.btn-lg.uppercase.font-14.text-700 Services & Products
 
-    .partners.bg-gray-3.border-bottom              
+    #company.partners.bg-gray-3.border-bottom              
       .container           
         .row
           .col-xs-12
-            .text-center        
+            .text-center.text-brand-500        
               .more-below.zmdi.zmdi-chevron-down.icon-button
 
         .row.pt32
           .col-xs-12
             .font-16.text-center.text-300.text-copy-0.uppercase Our Partners      
         .row.pt32.pb64
-          .col-xs-12.col-sm-4.pl32.pr32
-            img.img-responsive src="images/partners/bostik-gray.png"
-          .col-xs-12.col-sm-4.pl32.pr32
-            img.img-responsive src="images/partners/hempel-gray.png"
-          .col-xs-12.col-sm-4.pl32.pr32
-            img.img-responsive src="images/partners/flowcrete-gray.png"
+          .col-sm-8.col-centered
+            .row
+              .col-xs-12.col-sm-6.pl32.pr32
+                img.img-responsive src="images/partners/bostik-gray.png"
+              .col-xs-12.col-sm-6.pl32.pr32
+                img.img-responsive src="images/partners/flowcrete-gray.png"
     
     .description
       .bg-white.border-bottom
         .container
-          .row.pt64.pb64
-            .row
-              .col-xs-12.col-sm-4.col-sm-offset-2
-                .font-40.text-copy-2
-                  | Dependability 
-                  br
-                  | & Consistency
-              .col-xs-12.col-sm-4
-                .font-16.text-copy-1
-                  | Nonsenis estempedi corest evellest estium aseti eseque et remos es molectiunt re, voluptat ex et laboreribus dis dit, ut omniet a nonsedi orporitat volorro consedi arumetus.
+          .row.pt64.pb64.text-center
+            .col-xs-12.col-sm-4.col-sm-offset-2.border-right.pr48
+              img.img-max-h-96 src="images/graphics/asset-1.svg"
+              .font-16.uppercase.text-700.pt32
+                | Dependability
+              .font-14.text-copy-1.pt24
+                | We deliver on all our service level agreements whether in quality installations, project turn-over dates, or after-sales assistance.
+            .col-xs-12.col-sm-4.pl48
+              img.img-max-h-96 src="images/graphics/asset-2.svg"
+              .font-16.uppercase.text-700.pt32
+                | COMPETENCY
+              .font-14.text-copy-1.pt24
+                | Our goal is to provide our clients with quality and innovative solutions, which is why we continue to enhance our skills and core competencies.
 
-    .services.border-bottom
+    div style="background-image: url('images/backgrounds/divider.jpg'); background-attachment: fixed; background-size: cover; height: 256px;"
+
+    #services.services.border-bottom
       .container.pb40
         .row.pt40
           .col-xs-12
@@ -103,7 +108,7 @@ body
               .tile-thumb.bg-black style="background-image: url('images/services/relyable-services4.jpg')"
               .p16.text-copy-1
                 | Roof Deck Proofing
-        .row.pt24
+        .row.pt24.hidden
           .col-sm-4.col-xs-12.col-centered
             .btn.btn-copy-1-clear.btn-block.uppercase.text-300.text-space-wide
               | View Full List
@@ -142,7 +147,7 @@ body
                 | Self-Leveling 
                 br
                 | Mortar System
-        .row.pt24
+        .row.pt24.hidden
           .col-sm-4.col-xs-12.col-centered
             .btn.btn-copy-1-clear.btn-block.uppercase.text-300.text-space-wide
               | View Full List
@@ -166,7 +171,7 @@ body
                   | Exterior Wall Painting 
                   br
                   | and Roof Deck Waterproofing 
-                .btn.btn-sm.btn-white-clear.mt16
+                .btn.btn-sm.btn-white-clear.mt16.hidden
                   | Read More   
           .col-sm-4.col-xs-12
             .project-tile.mb16 style="background-image: url('images/projects/relyable-projects2.png')"
@@ -181,7 +186,7 @@ body
                   | Exterior Wall Painting 
                   br
                   | and Roof Deck Waterproofing 
-                .btn.btn-sm.btn-white-clear.mt16
+                .btn.btn-sm.btn-white-clear.mt16.hidden
                   | Read More  
           .col-sm-4.col-xs-12
             .project-tile.mb16 style="background-image: url('images/projects/relyable-projects3.png')"
@@ -196,7 +201,23 @@ body
                   | Exterior Wall Painting 
                   br
                   | and Roof Deck Waterproofing 
-                .btn.btn-sm.btn-white-clear.mt16
-                  | Read More  
+                .btn.btn-sm.btn-white-clear.mt16.hidden
+                  | Read More
+
+    #contact.bg-brand-500
+      .container
+        .row.pt24.pb24.font-14.text-white
+          .col-xs-12.col-sm-3
+            | Unit B, Lot 10, Block 3 Canaynay Ave.
+            br
+            | BF Martinville, Paranaque City
+          .col-xs-12.col-sm-3
+            | relyablephilippines@gmail.com
+            br
+            | 0925-388- 8392
+          .col-xs-12.col-sm-6
+            .text-right
+              br
+              | Copyright 2017. Relyable Building Technologies, Inc.
 
   script type="text/javascript" src="js/app.min.js"          

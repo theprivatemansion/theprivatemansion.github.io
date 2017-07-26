@@ -59,7 +59,7 @@ body {
 
 .font-64 {
   font-size: 64px;
-  line-height: 72px;
+  line-height: 80px;
 }
 
 .lh1 {
@@ -84,6 +84,10 @@ body {
 
 .text-copy-2 {
   color: #202020;
+}
+
+.text-brand-500 {
+  color: #9c0d17;
 }
 
 .text-300 {
@@ -493,6 +497,10 @@ h3 {
   background-color: white;
 }
 
+.bg-brand-500 {
+  background-color: #9c0d17;
+}
+
 .border {
   border: 1px solid #dcdcdc;
 }
@@ -501,9 +509,29 @@ h3 {
   border-bottom: 1px solid #dcdcdc;
 }
 
+.border-left {
+  border-left: 1px solid #dcdcdc;
+}
+
+.border-right {
+  border-right: 1px solid #dcdcdc;
+}
+
 .col-centered {
   float: none;
   margin: auto;
+}
+
+.img-max-w-64 {
+  max-width: 64px;
+}
+
+.img-max-w-96 {
+  max-width: 96px;
+}
+
+.img-max-h-96 {
+  max-height: 96px;
 }
 
 .services-tile .tile-thumb {
