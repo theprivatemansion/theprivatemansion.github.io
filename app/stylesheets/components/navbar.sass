@@ -1,19 +1,32 @@
-.navbar-relyable
+#mansion-navbar
   background: rgba(white, 0.24)
   height: 64px
   border: none
+  box-sizing: content-box
+  padding: 38px 0
+  transition: 0.2s padding
+
+  &.sticky
+    padding: 0
+    background: black
+    border-bottom: 1px solid $copy-1
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
 
   li a 
     color: white
     transition: 0.2s
 
-    &:hover
-      padding-bottom: 18px
+    &:hover,
+    &:focus
       background: transparent
-      border-bottom: 4px solid white
       color: white
 
 .navbar-brand
+  display: inline-block
+  float: none
   height: auto
   box-sizing: border-box
   padding: 12px 0

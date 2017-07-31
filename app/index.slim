@@ -2,222 +2,53 @@ head
   meta charset="UTF-8"
   meta name="viewport" content="initial-scale=1, maximum-scale=1"
   link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
-  link rel="stylesheet" href="css/bootstrap.css"
-  link rel="stylesheet" href="css/style.css"
+  link rel="stylesheet" href="dist/css/bootstrap.css"
+  link rel="stylesheet" href="dist/css/style.css"
 
 body
-
-  #home-page
-    div style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/backgrounds/relyable-home-banner.jpg'); background-attachment: fixed; background-size: cover;"
-      nav.navbar.navbar-relyable.mb0
-        .container: .row: .col-xs-12
-          .container-fluid
-          .navbar-header
-            button.navbar-toggle.collapsed aria-expanded="false" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button" 
-              span.sr-only Toggle navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
+  #mansion-navbar.mb0
+    .container
+      .row
+        .col-xs-4
+          .hidden-xs
+            .btn.btn-white-clear.uppercase.mt8
+              | Book Your Stay
+          .visible-xs
+            a.uppercase
+              | book
+        .col-xs-4
+          .text-center
             a.navbar-brand href="#"
               img src="images/logo/relyable-logo.png"
+        .col-xs-4.col-sm-0
+          button.navbar-toggle.collapsed aria-expanded="false" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button" 
+            span.sr-only Toggle navigation
+            .text-white MENU
+        .col-xs-12.col-sm-4
           #bs-example-navbar-collapse-1.collapse.navbar-collapse
-            ul.nav.navbar-nav.pull-right
-              li.active: a.uppercase.text-700 href="#home" Home
-              li: a.uppercase.text-700 href="#company" Company
-              li: a.uppercase.text-700 href="#services" Services
-              li: a.uppercase.text-700 href="#contact" Contact Us
-              
+            ul.nav.navbar-nav.pull-right.text-center
+              li
+                a.uppercase.text-700 href="#mansion-about" About
+              li
+                a.uppercase.text-700 href="#mansion-services" Gallery
+              li
+                a.uppercase.text-700 href="#mansion-location" Location
+  #mansion-home-page
+    #mansion-banner.banner.banner-carousel style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('images/backgrounds/relyable-home-banner.jpg'); background-attachment: fixed; background-size: cover;"
 
-      #home.main-banner.pt64.pb64
-        .container.pt64.pb64
-          .row
-            .col-xs-12
-              .text-white.text-center
-                .font-64
-                  | Specialty Construction
-                  br
-                  | Services & Products
-          .row 
-            .col-xs-12.col-sm-8.col-md-6.col-centered.pt64
-              .row
-                .col-xs-6.col-sm-6.pr8
-                  a.btn.btn-white-clear.btn-block.btn-lg.uppercase.font-14.text-700 href="#company" Company
-                .col-xs-6.col-sm-6.pl8
-                  a.btn.btn-white-clear.btn-block.btn-lg.uppercase.font-14.text-700 href="#services" Services & Products
-
-    #company.partners.bg-gray-3.border-bottom              
-      .container           
-        .row
-          .col-xs-12
-            .text-center.text-brand-500        
-              .more-below.zmdi.zmdi-chevron-down.icon-button
-
-        .row.pt32
-          .col-xs-12
-            .font-16.text-center.text-300.text-copy-0.uppercase Our Partners      
-        .row.pt32.pb64
-          .col-sm-8.col-centered
-            .row
-              .col-xs-12.col-sm-6.pl32.pr32
-                img.img-responsive src="images/partners/bostik-gray.png"
-              .col-xs-12.col-sm-6.pl32.pr32
-                img.img-responsive src="images/partners/flowcrete-gray.png"
-    
-    .description
-      .bg-white.border-bottom
+    #mansion-about
+      .bg-black
         .container
-          .row.pt64.pb64.text-center
-            .col-xs-12.col-sm-4.col-sm-offset-2.border-right.pr48
-              img.img-max-h-96 src="images/graphics/asset-1.svg"
-              .font-16.uppercase.text-700.pt32.text-space-wide
-                | Dependability
-              .font-14.text-copy-1.pt24
-                | We deliver on all our service level agreements whether in quality installations, project turn-over dates, or after-sales assistance.
-            .col-xs-12.col-sm-4.pl48
-              img.img-max-h-96 src="images/graphics/asset-2.svg"
-              .font-16.uppercase.text-700.pt32.text-space-wide
-                | COMPETENCY
-              .font-14.text-copy-1.pt24
-                | Our goal is to provide our clients with quality and innovative solutions, which is why we continue to enhance our skills and core competencies.
+          .row
+            .col-xs-12.col-sm-6.col-md-4
+              | Serrum que re nus, imi, sum is essi arum aut acescid ut quo essitatis dus quam ad quas everum nulpa eum renit fuga. Ex escil nimagnam quo to et acessus ilitis dolupta temporp orpore.
 
-    div style="background-image: url('images/backgrounds/divider.jpg'); background-attachment: fixed; background-size: cover; height: 256px;"
+              | Aute magnate mperfer arit assit eaque et ab idera sunt ullandi psand ditate venihic aboribus, omni suntem et facculpa sectian destessitat
 
-    #services.services.border-bottom
-      .container.pb40
-        .row.pt40
-          .col-xs-12
-            .font-21.text-center.text-700.text-copy-2.uppercase.text-space-wide SERVICES
-        .row.pt32
-          .col-sm-3.col-xs-12
-            .card.card-clickable.services-tile.mb16
-              .tile-thumb.bg-black style="background-image: url('images/services/relyable-services.jpg')"
-              .p16.text-copy-1
-                | Interior Painting
-          .col-sm-3.col-xs-12
-            .card.card-clickable.services-tile.mb16
-              .tile-thumb.bg-black style="background-image: url('images/services/relyable-services2.jpg')"
-              .p16.text-copy-1
-                | Exterior Painting
-          .col-sm-3.col-xs-12
-            .card.card-clickable.services-tile.mb16
-              .tile-thumb.bg-black style="background-image: url('images/services/relyable-services3.jpg')"
-              .p16.text-copy-1
-                | Roof Leak Painting
-          .col-sm-3.col-xs-12
-            .card.card-clickable.services-tile.mb16
-              .tile-thumb.bg-black style="background-image: url('images/services/relyable-services4.jpg')"
-              .p16.text-copy-1
-                | Roof Deck Proofing
-        .row.pt24.hidden
-          .col-sm-4.col-xs-12.col-centered
-            .btn.btn-copy-1-clear.btn-block.uppercase.text-300.text-space-wide
-              | View Full List
+    #mansion-gallery
 
-    .products.border-bottom
-      .container.pb40
-        .row.pt40
-          .col-xs-12
-            .font-21.text-center.text-700.text-copy-2.uppercase.text-space-wide Products
-        .row.pt32
-          .col-sm-3.col-xs-12
-            .card.card-clickable.services-tile.mb16
-              .tile-thumb.bg-black style="background-image: url('images/products/elastomeric.jpg')"
-              .p16.text-copy-1
-                | Flexshield Gold 
-                br
-                | Elastomeric Paint
-          .col-sm-3.col-xs-12
-            .card.card-clickable.services-tile.mb16
-              .tile-thumb.bg-black style="background-image: url('images/products/eifs.jpg')"
-              .p16.text-copy-1
-                | Flexshield Textured Finish 
-                br
-                | EIFS Finishers
-          .col-sm-3.col-xs-12
-            .card.card-clickable.services-tile.mb16
-              .tile-thumb.bg-black style="background-image: url('images/products/roachkill.jpg')"
-              .p16.text-copy-1
-                | Roachkill Paint 
-                br
-                | &nbsp;
-          .col-sm-3.col-xs-12
-            .card.card-clickable.services-tile.mb16
-              .tile-thumb.bg-black style="background-image: url('images/products/mortar.jpg')"
-              .p16.text-copy-1
-                | Self-Leveling 
-                br
-                | Mortar System
-        .row.pt24.hidden
-          .col-sm-4.col-xs-12.col-centered
-            .btn.btn-copy-1-clear.btn-block.uppercase.text-300.text-space-wide
-              | View Full List
+    #mansion-location
 
-    .projects.bg-white
-      .container.pb40
-        .row.pt40
-          .col-xs-12
-            .font-21.text-center.text-700.text-copy-1.uppercase.text-space-wide Projects
-        .row.pt32
-          .col-sm-4.col-xs-12
-            .project-tile.mb16 style="background-image: url('images/projects/relyable-projects1.png')"
-              .project-tile-text.p24
-                .font-16.uppercase.text-700
-                  | First Balfour, 
-                  br
-                  | Lopez Group of Companies
-                .font-14.pt32
-                  | Service:
-                  br
-                  | Exterior Wall Painting 
-                  br
-                  | and Roof Deck Waterproofing 
-                .btn.btn-sm.btn-white-clear.mt16.hidden
-                  | Read More   
-          .col-sm-4.col-xs-12
-            .project-tile.mb16 style="background-image: url('images/projects/relyable-projects2.png')"
-              .project-tile-text.p24
-                .font-16.uppercase.text-700
-                  | ST. LUKES MEDICAL CENTER, 
-                  br
-                  | GLOBAL CITY 
-                .font-14.pt32
-                  | Service:
-                  br
-                  | Exterior Wall Painting 
-                  br
-                  | and Roof Deck Waterproofing 
-                .btn.btn-sm.btn-white-clear.mt16.hidden
-                  | Read More  
-          .col-sm-4.col-xs-12
-            .project-tile.mb16 style="background-image: url('images/projects/relyable-projects3.png')"
-              .project-tile-text.p24
-                .font-16.uppercase.text-700
-                  | GMA Network, 
-                  br
-                  | GMA Kapuso Foundation 
-                .font-14.pt32
-                  | Service:
-                  br
-                  | Exterior Wall Painting 
-                  br
-                  | and Roof Deck Waterproofing 
-                .btn.btn-sm.btn-white-clear.mt16.hidden
-                  | Read More
+    #mansion-footer
 
-    #contact.bg-black
-      .container
-        .row.pt24.pb24.font-14.text-white
-          .col-xs-12.col-sm-3
-            | Unit B, Lot 10, Block 3 Canaynay Ave.
-            br
-            | BF Martinville, Paranaque City
-          .col-xs-12.col-sm-3
-            | relyablephilippines@gmail.com
-            br
-            | 452 9113
-          .col-xs-12.col-sm-6
-            .text-right
-              br
-              | Copyright 2017. Relyable Building Technologies, Inc.
-
-  script type="text/javascript" src="js/app.min.js"          
+  script type="text/javascript" src="dist/js/app.min.js"          

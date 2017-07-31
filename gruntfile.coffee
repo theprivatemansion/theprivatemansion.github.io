@@ -17,7 +17,7 @@ module.exports = (grunt) ->
       build:
         files:
           [
-            {'dist/index.html' : 'app/index.slim'},
+            {'index.html' : 'app/index.slim'},
             {
               expand: true,
               cwd: 'app/pages',
@@ -101,4 +101,4 @@ module.exports = (grunt) ->
 
   # tasks
   grunt.registerTask 'default', ['uglify', 'sass', 'slim', 'connect', 'copy', 'watch']
-  grunt.registerTask 'heroku', ['uglify', 'sass', 'slim', 'copy']
+  grunt.registerTask 'compile', ['uglify', 'sass', 'slim', 'copy']

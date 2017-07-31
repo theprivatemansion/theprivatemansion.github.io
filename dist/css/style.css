@@ -566,7 +566,7 @@ h3 {
   background: #dcdcdc;
   border: 1px solid #dcdcdc;
   padding: 0 24px;
-  line-height: 44px;
+  line-height: 42px;
   vertical-align: middle;
   transition: 0.2s;
 }
@@ -607,17 +607,17 @@ h3 {
 
 .btn-sm {
   font-size: 14px;
-  line-height: 40px;
+  line-height: 38px;
 }
 
 .btn-lg {
   font-size: 16px;
-  line-height: 48px;
+  line-height: 46px;
 }
 
 .btn-xlg {
   font-size: 16px;
-  line-height: 64px;
+  line-height: 62px;
 }
 
 .icon-button {
@@ -633,23 +633,35 @@ h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.32);
 }
 
-.navbar-relyable {
+#mansion-navbar {
   background: rgba(255, 255, 255, 0.24);
   height: 64px;
   border: none;
+  box-sizing: content-box;
+  padding: 38px 0;
+  transition: 0.2s padding;
 }
-.navbar-relyable li a {
+#mansion-navbar.sticky {
+  padding: 0;
+  background: black;
+  border-bottom: 1px solid #727272;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#mansion-navbar li a {
   color: white;
   transition: 0.2s;
 }
-.navbar-relyable li a:hover {
-  padding-bottom: 18px;
+#mansion-navbar li a:hover, #mansion-navbar li a:focus {
   background: transparent;
-  border-bottom: 4px solid white;
   color: white;
 }
 
 .navbar-brand {
+  display: inline-block;
+  float: none;
   height: auto;
   box-sizing: border-box;
   padding: 12px 0;
@@ -685,8 +697,13 @@ h3 {
   box-shadow: none;
 }
 
-.more-below {
-  margin-top: -22px;
+#mansion-navbar:not(.sticky) {
+  margin-bottom: -140px;
+}
+
+#mansion-banner {
+  height: 1200px;
+  background-color: #dcdcdc;
 }
 
 body {

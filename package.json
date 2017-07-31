@@ -1,7 +1,7 @@
 {
-  "name": "PROJECT_NAME",
-  "description": "PROJECT_DESCRIPTION",
-  "author": "YOUR_NAME <YOUR@EMAIL.COM>",
+  "name": "mansion-website",
+  "description": "homepage-for-mansion",
+  "author": "markbanaria@gmail.com",
   "version": "0.1.0",
   "devDependencies": {
     "bootstrap": "^3.3.6",
