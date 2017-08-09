@@ -78,7 +78,7 @@ module.exports = (grunt) ->
           {
             expand: true,
             cwd: 'app/fonts',
-            src: ['*.otf'],
+            src: ['*.ttf','*.otf'],
             dest: 'dist/fonts'
           }
         ]      
