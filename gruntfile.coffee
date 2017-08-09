@@ -54,7 +54,7 @@ module.exports = (grunt) ->
         files: ['**/*.js']
         tasks: ['uglify']
       uglify:  
-        files: ['**/*.js']
+        files: ['app/*.js']
         tasks: ['uglify']
       options:
         livereload: true
@@ -63,7 +63,7 @@ module.exports = (grunt) ->
     connect:
       server:
         options:
-          base: 'dist'
+          base: ''
 
     # grunt copy
     copy:
@@ -100,5 +100,6 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-copy'
 
   # tasks
-  grunt.registerTask 'default', ['uglify', 'sass', 'slim', 'connect', 'copy', 'watch']
+  grunt.registerTask 'default', ['uglify', 'sass', 'slim', 'connect', 'watch']
+  grunt.registerTask 'assets', ['copy']
   grunt.registerTask 'compile', ['uglify', 'sass', 'slim', 'copy']

@@ -611,7 +611,7 @@ h3 {
   border-color: white;
 }
 .btn-white-clear:hover {
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   color: #e0e0e0;
 }
 
@@ -631,7 +631,7 @@ h3 {
   border-color: #727272;
 }
 .btn-copy-1-clear:hover {
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   color: #535353;
 }
 
@@ -727,13 +727,25 @@ h3 {
   box-shadow: none;
 }
 
+#mansion-home-page {
+  position: relative;
+  padding-top: 95vh;
+}
+
 #mansion-navbar:not(.sticky) {
   margin-bottom: -140px;
 }
 
-#mansion-banner {
-  height: 1200px;
-  background-color: #dcdcdc;
+.banner-carousel {
+  position: absolute;
+  top: 0;
+  height: 95vh;
+  width: 100%;
+  background-color: black;
+  background-size: cover;
+  background-position: 50% 100%;
+  transition: opacity 1s;
+  opacity: 0;
 }
 
 body {
