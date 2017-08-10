@@ -12,8 +12,7 @@ var checkTop = function() {
 var carouselIncrement = function(elem, filePrefix, fileType) {
   ctr = (ctr + 1) % photosMax;
   elem.last().after("<div class='banner-carousel'></div>");
-  $('.banner-carousel').last().css("background-image", "url(" + filePrefix + ctr + fileType + ")")
-    .css("background-image", "url(" + filePrefix + ctr + fileType + ")");
+  $('.banner-carousel').last().css("background-image", "linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.0) 50%, rgba(0,0,0,0.0)), url(" + filePrefix + ctr + fileType + ")");
   elem.last().css("opacity", 1);
   if(elem.length > 2) {
     elem.first().remove();

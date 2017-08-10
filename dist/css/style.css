@@ -563,6 +563,10 @@ h3 {
   background-color: #9c0d17;
 }
 
+.bg-accent-500 {
+  background-color: #4f3437;
+}
+
 .bg-copy-1 {
   background-color: #727272;
 }
@@ -665,7 +669,7 @@ h3 {
   border-color: white;
 }
 .btn-white-clear:hover {
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   color: #e0e0e0;
 }
 
@@ -685,7 +689,7 @@ h3 {
   border-color: #727272;
 }
 .btn-copy-1-clear:hover {
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   color: #535353;
 }
 
@@ -800,6 +804,21 @@ h3 {
   background-position: 50% 50%;
   transition: opacity 1s;
   opacity: 0;
+}
+
+.banner-icon {
+  position: absolute;
+  top: 0;
+  width: 400px;
+  left: calc(50% - 200px);
+  padding-top: 80px;
+}
+
+.about-icon {
+  width: 88px;
+  display: block;
+  margin: auto;
+  padding-bottom: 24px;
 }
 
 body {
