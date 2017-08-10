@@ -36,15 +36,15 @@ var carouselIncrement = function(elem, filePrefix, fileType) {
         elem.first().remove();
       }
       break;
-    case 2:
-      console.log(ctr);
-      elem.last().after("<div class='banner-carousel'><div class='carousel-divider text-white text-titling font-80 text-center uppercase text-space-xwide'>The Mansion</div></div>");
-      elem.last().css("opacity", 1);
-      if(elem.length > 2) {
-        elem.first().remove();
-      }
-      break;
-    case 7:
+    // case 2:
+    //   console.log(ctr);
+    //   elem.last().after("<div class='banner-carousel'><div class='carousel-divider text-white text-titling font-80 text-center uppercase text-space-xwide'>The Mansion</div></div>");
+    //   elem.last().css("opacity", 1);
+    //   if(elem.length > 2) {
+    //     elem.first().remove();
+    //   }
+    //   break;
+    case 6:
       console.log(ctr);
       elem.last().after("<div class='banner-carousel'><div class='carousel-divider text-white text-titling font-80 text-center uppercase text-space-xwide'>Suites & Ameneties</div></div>");
       elem.last().css("opacity", 1);
@@ -52,7 +52,7 @@ var carouselIncrement = function(elem, filePrefix, fileType) {
         elem.first().remove();
       }
       break;
-    case 15:
+    case 16:
       console.log(ctr);
       elem.last().after("<div class='banner-carousel'><div class='carousel-divider text-white text-titling font-80 text-center uppercase text-space-xwide'>Outdoor Venue</div></div>");
       elem.last().css("opacity", 1);

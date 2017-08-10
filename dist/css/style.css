@@ -699,7 +699,7 @@ h3 {
   border-color: white;
 }
 .btn-white-clear:hover {
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
   color: #e0e0e0;
 }
 
@@ -719,7 +719,7 @@ h3 {
   border-color: #727272;
 }
 .btn-copy-1-clear:hover {
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
   color: #535353;
 }
 
@@ -879,8 +879,12 @@ h3 {
   }
 
   .footer-info {
-    text-align: left;
+    text-align: center;
     padding-top: 32px;
+  }
+
+  .footer-logo-container {
+    text-align: center;
   }
 }
 body {
