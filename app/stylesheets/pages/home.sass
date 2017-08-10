@@ -11,21 +11,38 @@
   top: 0
   height: 95vh
   width: 100%
-  background-color: black
+  background-color: $accent-500
   background-size: cover
   background-position: 50% 50%
   transition: opacity 1s
   opacity: 0
+  z-index: 0
 
 .banner-icon
   position: absolute
   top: 0
   width: 400px
   left: calc(50% - 200px)
+  left: -webkit-calc(50% - 200px)
   padding-top: 80px
 
 .about-icon
   width: 88px
   display: block
   margin: auto
-  padding-bottom: 24px 
+  padding-bottom: 24px
+
+#mansion-about
+  box-shadow: 0 -4px 8px 16px rgba(0,0,0,0.23)
+  z-index: 2
+
+@media screen and (max-width: 768px)
+  .banner-icon
+    width: 240px
+    left: calc(50% - 120px)
+    left: -wbkit-calc(50% - 120px)
+    padding-top: 40px
+
+.carousel-divider
+  padding-top: calc(95vh - 56px)
+  padding-top: -webkit-calc(47.5vh - 56px)
