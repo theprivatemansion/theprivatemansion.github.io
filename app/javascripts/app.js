@@ -3,7 +3,7 @@ var $window = $(window);
 var $mansionNavbar = $('#mansion-navbar');
 var $homePage = $('.home-page');
 var ctr = 1;
-var photosMax = 22;
+var photosMax = 24;
 
 var checkTop = function() {
 	return ($window.scrollTop() > 0) 
@@ -52,7 +52,7 @@ var carouselIncrement = function(elem, filePrefix, fileType) {
         elem.first().remove();
       }
       break;
-    case 16:
+    case 17:
       console.log(ctr);
       elem.last().after("<div class='banner-carousel'><div class='carousel-divider text-white text-titling font-80 text-center uppercase text-space-xwide'>Outdoor Venue</div></div>");
       elem.last().css("opacity", 1);
