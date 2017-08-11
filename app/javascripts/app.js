@@ -81,5 +81,5 @@ $document.ready(function() {
 	// 		$mansionNavbar.removeClass('sticky');
 	// 	}
 	// });
-  setInterval(function() {carouselIncrement($('.banner-carousel'), "dist/images/banners/", ".jpg")}, 1200);
+  setInterval(function() {carouselIncrement($('.banner-carousel'), "dist/images/banners/", ".jpg")}, 3500);
 });
