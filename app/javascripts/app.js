@@ -52,7 +52,7 @@ var carouselIncrement = function(elem, filePrefix, fileType) {
         elem.first().remove();
       }
       break;
-    case 17:
+    case 19:
       console.log(ctr);
       elem.last().after("<div class='banner-carousel'><div class='carousel-divider text-white text-titling font-80 text-center uppercase text-space-xwide'>Outdoor Venue</div></div>");
       elem.last().css("opacity", 1);
