@@ -127,7 +127,7 @@ body {
 }
 
 .text-brand-500 {
-  color: #9c0d17;
+  color: #4f3437;
 }
 
 .text-accent-500 {
@@ -578,7 +578,7 @@ h3 {
 }
 
 .bg-brand-500 {
-  background-color: #9c0d17;
+  background-color: #4f3437;
 }
 
 .bg-accent-300 {
@@ -699,7 +699,7 @@ h3 {
   border-color: white;
 }
 .btn-white-clear:hover {
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
   color: #e0e0e0;
 }
 
@@ -719,7 +719,7 @@ h3 {
   border-color: #727272;
 }
 .btn-copy-1-clear:hover {
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
   color: #535353;
 }
 
@@ -876,6 +876,11 @@ h3 {
     left: calc(50% - 120px);
     left: -wbkit-calc(50% - 120px);
     padding-top: 40px;
+  }
+
+  .cta-text {
+    font-size: 21px;
+    line-height: 28px;
   }
 
   .footer-info {
